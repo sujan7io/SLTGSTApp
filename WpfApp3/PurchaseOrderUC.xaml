@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="WpfApp3.PurchaseOrderUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp3"
+             mc:Ignorable="d" Width="827.827" Height="571.552" Background="#FFBB9B9B">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Vendor Name" Grid.Column="0" Grid.Row="0" Margin="0,2,32,0" FontSize="14" FontWeight="Bold" />
+        <TextBox x:Name="VendorName" Grid.Column="1" Grid.Row="0" RenderTransformOrigin="0.5,0.5" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Purchase Order#" Grid.Column="0" Grid.Row="1" Margin="0,1,14,2" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="PurchaseOrderNo" Grid.Column="1" FontSize="14" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="Reference#" Grid.Column="0" Grid.Row="2" Margin="0,0,23,1" RenderTransformOrigin="0.5,0.5" FontSize="14" FontWeight="Bold" />
+        <TextBox x:Name="ReferenceNo" Grid.Column="1" Grid.Row="2" RenderTransformOrigin="0.5,0.5" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Date" Grid.Column="0" Grid.Row="3" Margin="1,4,10,0" Height="30" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBox x:Name="Date" Grid.Column="1" Grid.Row="3" RenderTransformOrigin="0.5,0.5" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Delivery Date" Grid.Column="2" Grid.Row="3" Margin="8,2,10,0" Height="26" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="DeliveryDate" Grid.Column="3" Grid.Row="3" RenderTransformOrigin="0.5,0.5" FontSize="14" FontWeight="Bold"/>
+        <Label Content="DeliveryMethod" Grid.Column="0" Grid.Row="4" FontSize="14" FontWeight="Bold" />
+        <ComboBox x:Name="DeliveryMethod" Text="Deliver Method" Grid.Column="1" Grid.Row="4" FontSize="14" FontWeight="Bold"/>
+        <DataGrid x:Name="ItemDetails" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" FontSize="14" FontWeight="Bold">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Item Details"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Quantity"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Rate"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Discount"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Tax"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Amount"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button x:Name="AddItem" Content="AddItem" Grid.Column="4" Grid.Row="6"/>
+        <Label Content="SubTotal" Grid.Column="2" Grid.Row="7" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="SubTotal" Grid.Column="3" Grid.Row="7" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Adjustment" Grid.Column="2" Grid.Row="8" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="Adjustment" Grid.Column="3" Grid.Row="8" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Total" Grid.Column="2" Grid.Row="9" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="Total" Grid.Column="3" Grid.Row="9" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Attach Files" Grid.Column="0" Grid.Row="10" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="AttachFiles" Content="Attach" Grid.Column="1" Grid.Row="10" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Customer Notes" Grid.Column="2" Grid.Row="10" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="CustNotes" Grid.Column="3" Grid.Row="10" FontSize="14" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Content="Deliver To:" Grid.Column="0" Grid.Row="11" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="Templates" Content="Standard Templates" Grid.Column="2" Grid.Row="11" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Terms and Conditions" Grid.Column="3" Grid.Row="11" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="TermAndCondns" Grid.Column="4" Grid.Row="11" FontSize="14" FontWeight="Bold"/>
+        <Viewbox Grid.ColumnSpan="2" Grid.Row="12" Stretch="Fill">
+            <Grid Height="44" Width="332">
+                <RadioButton x:Name="RadioOrg" Content="Organization" Grid.Column="0" FontSize="14" FontWeight="Bold" IsChecked="True" Margin="0,0,166,0"/>
+                <RadioButton x:Name="RadioCust" Content="Customer" FontSize="14" FontWeight="Bold" Margin="166,0,0,0"/>
+            </Grid>
+        </Viewbox>
+        <Button x:Name="CreateTable" Content="Create Table" Grid.Column="0" Grid.Row="13" FontSize="14" FontWeight="Bold" Click="CreateTable_Click" />
+        <Button x:Name="ShowData" Content="ShowData" Grid.Column="1" Grid.Row="13" FontSize="14" FontWeight="Bold" Click="ShowData_Click" />
+        <Button x:Name="Update" Content="Update" Grid.Column="2" Grid.Row="13" FontSize="14" FontWeight="Bold" Click="Update_Click" />
+        <Button x:Name="SaveAsDraft" Content="Save as draft" Grid.Column="3" Grid.Row="13" FontSize="14" FontWeight="Bold" Click="SaveAsDraft_Click" />
+        <Button x:Name="SaveAndSend" Content="Save and send" Grid.Column="4" Grid.Row="13" FontSize="14" FontWeight="Bold" Click="SaveAndSend_Click" />
+        <Button x:Name="Cancel" Content="Cancel" Grid.Column="5" Grid.Row="13" FontSize="14" FontWeight="Bold" Click="Cancel_Click" />
+        <DataGrid x:Name="dataGridTable" Grid.Column="0" Grid.Row="14" Grid.ColumnSpan="6" Height="Auto" Width="Auto"/>
+    </Grid>
+</UserControl>
