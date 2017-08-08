@@ -1,9 +1,3 @@
-E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\WpfApp3.exe.config
-E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\WpfApp3.exe
-E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\WpfApp3.pdb
-E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\Vestris.ResourceLib.dll
-E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\Xpand.ExpressApp.Win.Para.WindowsIntegration.dll
-E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\WpfApp3.csprojResolveAssemblyReference.cache
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\items.g.cs
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\MainWindow.g.cs
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\SalesOrderUC.g.cs
@@ -11,10 +5,16 @@ E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\SalesOrderInvoiceUC.g.cs
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\PurchaseOrderInvoiceUC.g.cs
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\PurchaseOrderUC.g.cs
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\UserControlInventoryReport.g.cs
+E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\UserControlSOPOS.g.cs
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\App.g.cs
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\WpfApp3_MarkupCompile.cache
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\WpfApp3_MarkupCompile.lref
+E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\WpfApp3.exe.config
+E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\WpfApp3.exe
+E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\WpfApp3.pdb
+E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\Vestris.ResourceLib.dll
+E:\sujan\SLTGSTApp\WpfApp3\bin\Debug\Xpand.ExpressApp.Win.Para.WindowsIntegration.dll
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\items.baml
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\MainWindow.baml
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\SalesOrderUC.baml
@@ -22,6 +22,7 @@ E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\SalesOrderInvoiceUC.baml
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\PurchaseOrderInvoiceUC.baml
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\PurchaseOrderUC.baml
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\UserControlInventoryReport.baml
+E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\UserControlSOPOS.baml
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\WpfApp3.g.resources
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\WpfApp3.Form1.resources
 E:\sujan\SLTGSTApp\WpfApp3\obj\Debug\WpfApp3.Form2.resources

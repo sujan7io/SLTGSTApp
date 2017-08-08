@@ -91,6 +91,9 @@
     <Compile Include="UserControlInventoryReport.xaml.cs">
       <DependentUpon>UserControlInventoryReport.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControlSOPOS.xaml.cs">
+      <DependentUpon>UserControlSOPOS.xaml</DependentUpon>
+    </Compile>
     <Page Include="items.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +130,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControlInventoryReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlSOPOS.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

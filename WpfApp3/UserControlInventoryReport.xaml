@@ -5,27 +5,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp3"
              mc:Ignorable="d" Width="585" Height="697" Background="#FFA67070">
-    <Grid Margin="0,10,0,0">
-        <Grid.ColumnDefinitions>
-        </Grid.ColumnDefinitions>
+    <Grid x:Name="chartGrid" Margin="0,10" Grid.Row="3">
         <Grid.RowDefinitions>
             <RowDefinition Height="30">
             </RowDefinition>
             <RowDefinition >
             </RowDefinition>
-            <RowDefinition Height="30">
-            </RowDefinition>
-            <RowDefinition>
-            </RowDefinition>
-
         </Grid.RowDefinitions>
-        <Button x:Name="showReport" Grid.Row="0" Content="Inventory Report" VerticalAlignment="Top" HorizontalAlignment="Right" Click="showReport_Click" Margin="0,4,4,0" Width="102"></Button>
+        <Button x:Name="showReport" Grid.Row="0" Content="Inventory Report" HorizontalAlignment="Right" Click="showReport_Click" Margin="0,4,4,4" Width="102"/>
         <Button x:Name="Update" Grid.Row="0" Content="Update" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,4,111,0" Width="88" Click="Update_Click" ></Button>
-        <DataGrid x:Name="ReportView" Grid.Row="1" Margin="-3,1,3,10" Background="#FF99A491"/>
-        <Button x:Name="showReportSales" Grid.Row="2" Content="Sales Stock Report" HorizontalAlignment="Right" Margin="0,5,3,3" Click="showReportSales_Click" Width="119"/>
-        <Grid x:Name="chartGrid" Margin="0,10" Grid.Row="3">
-            <DataGrid x:Name="ReportViewSales" Background="#FF84A28B" Grid.ColumnSpan="2"/>
+        <Button x:Name="showReportSales" Grid.Row="0" Content="Sales Stock Report" HorizontalAlignment="Right" Margin="0,4,204,4" Click="showReportSales_Click" Width="119"/>
+        <Button x:Name="ChartViewSales" Content="Chart View" Grid.Row="0" HorizontalAlignment="Right" Margin="0,4,328,4" Width="77" Click="ChartViewSales_Click" />
+        <Grid x:Name="ChartGrid2" Grid.Row="1">
+            <DataGrid x:Name="ReportViewSales" Grid.Row="1" Background="#FF84A28B" SelectionChanged="ReportViewSales_SelectionChanged"/>
         </Grid>
-        <Button x:Name="ChartViewSales" Content="Chart View" HorizontalAlignment="Right" Margin="0,5,123,3" Width="77" Grid.Row="2" Click="ChartViewSales_Click" />
     </Grid>
 </UserControl>

@@ -229,7 +229,7 @@ namespace WpfApp3
                 MaxLength = 100
                 });
 
-            string sqlc1;
+                string sqlc1;
                 table.PrimaryKey = new DataColumn[] { table.Columns[1] };
                 con.Open();
                 bool ifExists = TableExists(con, "master", "Items");

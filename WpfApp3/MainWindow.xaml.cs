@@ -25,7 +25,7 @@ namespace WpfApp3
 
     {
         private items item;
-        private SalesOrderUC souc;
+        private UserControlSOPOS sopos;
         private SalesOrderInvoiceUC soiuc;
         private PurchaseOrderUC pouc;
         private PurchaseOrderInvoiceUC poiuc;
@@ -62,12 +62,12 @@ namespace WpfApp3
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)
         {
             //MessageBox.Show("Showing Sales Orders UserControl");
-            souc = new SalesOrderUC();
+            sopos = new UserControlSOPOS();
             Grid res = this.center as Grid;
             res.Children.Clear();
-            souc.Width = res.Width;
-            souc.Height = res.Height;
-            res.Children.Add(souc);
+            sopos.Width = res.Width;
+            sopos.Height = res.Height;
+            res.Children.Add(sopos);
         }
 
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)

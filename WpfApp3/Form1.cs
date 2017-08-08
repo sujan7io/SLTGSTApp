@@ -84,16 +84,18 @@ namespace WpfApp3
             string connStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection conn = new SqlConnection(connStr);
             conn.Open();
-            string query2 = "SELECT CustID,Name,Amount FROM SaleItems";
+            string query2 = "SELECT Name, Date, Total FROM ItemsToBeSold";
             SqlDataAdapter adapter2 = new SqlDataAdapter(query2, conn);
+            adapter2.SelectCommand.ExecuteNonQuery();
             DataTable table3 = new DataTable();
             adapter2.Fill(table3);
 
             foreach (DataRow theRow in table3.Rows)
             {
-                this.chart3.Series["SalesReport"].Points.AddXY(theRow.ItemArray[0].ToString(), double.Parse(theRow.ItemArray[2].ToString()));
-                this.chart3.Series["SalesReport"].Points.AddXY(theRow.ItemArray[1].ToString(), double.Parse(theRow.ItemArray[2].ToString()));
+                this.chart3.Series["SalesReportName"].Points.AddXY(theRow.ItemArray[0].ToString(), double.Parse(theRow.ItemArray[2].ToString()));
+                this.chart3.Series["SalesReportDate"].Points.AddXY(theRow.ItemArray[1].ToString(), double.Parse(theRow.ItemArray[2].ToString()));
             }
+            conn.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -102,7 +104,7 @@ namespace WpfApp3
             SqlConnection conn = new SqlConnection(connStr);
             conn.Open();
 
-            string query2 = "SELECT CustID,Name,Discount,Tax,Amount FROM SaleItems";
+            string query2 = "SELECT Name, Date, Time, Tax, Discount, Total FROM ItemsToBeSold";
             SqlDataAdapter adapter2 = new SqlDataAdapter(query2, conn);
             adapter2.SelectCommand.ExecuteNonQuery();
             DataTable table3 = new DataTable();
@@ -111,7 +113,7 @@ namespace WpfApp3
 
             foreach (DataRow theRow in table3.Rows)
             {
-                string itemName = theRow.ItemArray[1].ToString();
+                string itemName = theRow.ItemArray[0].ToString();
                 string query3 = "SELECT PurchaseRate FROM Items WHERE Name='" + itemName + "'";
                 SqlDataAdapter adapter3 = new SqlDataAdapter(query3, conn);
                 adapter3.SelectCommand.ExecuteNonQuery();
@@ -120,10 +122,12 @@ namespace WpfApp3
 
                 foreach (DataRow theRow2 in table4.Rows)
                 {
-                    double saleRate = double.Parse(theRow.ItemArray[4].ToString()) - double.Parse(theRow.ItemArray[3].ToString()) - double.Parse(theRow.ItemArray[2].ToString());
+                    double saleRate = double.Parse(theRow.ItemArray[5].ToString()) - double.Parse(theRow.ItemArray[4].ToString()) - double.Parse(theRow.ItemArray[3].ToString());
                     double profitLoss = saleRate - double.Parse(theRow2.ItemArray[0].ToString());
-                    this.chart4.Series["ProfitLoss"].Points.AddXY(theRow.ItemArray[1].ToString(), profitLoss);
-                    this.chart4.Series["ProfitLoss"].Points.AddXY(theRow.ItemArray[0].ToString(), profitLoss );
+                    this.chart4.Series["ProfitLossName"].Points.AddXY(theRow.ItemArray[0].ToString(), profitLoss);
+                    this.chart4.Series["ProfitLossDate"].Points.AddXY(theRow.ItemArray[1].ToString(), profitLoss );
+                    this.chart4.Series["ProfitLossDateTime"].Points.AddXY(theRow.ItemArray[1].ToString() + " Time: "+ theRow.ItemArray[2].ToString(), profitLoss);
+
                 }
             }
         }

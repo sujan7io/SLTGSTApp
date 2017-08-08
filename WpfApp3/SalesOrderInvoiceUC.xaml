@@ -27,6 +27,10 @@
             </ColumnDefinition>
             <ColumnDefinition>
             </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition>
@@ -111,5 +115,8 @@
         <Button x:Name="SaveAndSend" Content="Save and send" Grid.Column="4" Grid.Row="12" FontSize="14" FontWeight="Bold" Click="SaveAndSend_Click" />
         <Button x:Name="Cancel" Content="Cancel" Grid.Column="5" Grid.Row="12" FontSize="14" FontWeight="Bold" Click="Cancel_Click" />
         <DataGrid x:Name="DataGridTable" Grid.Column="0" Grid.Row="13" Grid.ColumnSpan="6" Height="Auto" Width="Auto"/>
+        <Button x:Name="CreateTableItems" Content="CreateTable" Grid.Column="5" Grid.Row="6" Grid.ColumnSpan="2" Margin="0,0,114,0"/>
+        <Button x:Name="ShowDataItems" Content="ShowData" Grid.Column="6" Grid.Row="6" Grid.ColumnSpan="2" Margin="1,0,113,0"/>
+        <Button x:Name="UpdateTableItems" Content="Update" Grid.Column="7" Grid.Row="6" Margin="0,0,-1,0"/>
     </Grid>
 </UserControl>

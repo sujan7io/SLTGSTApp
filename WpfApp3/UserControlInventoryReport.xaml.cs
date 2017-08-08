@@ -27,9 +27,12 @@ namespace WpfApp3
         SqlCommandBuilder scb;
         private Form1 form1;
         DataTable table1;
+        System.Windows.Forms.Integration.WindowsFormsHost host;
         public UserControlInventoryReport()
         {
+            form1 = null;
             InitializeComponent();
+            System.Windows.Forms.Integration.WindowsFormsHost host = null;
         }
         //OpeningStock * OpeningStockRatePerUnit = Sales
         //Name-Code
@@ -42,7 +45,11 @@ namespace WpfApp3
             sda.SelectCommand.ExecuteNonQuery();
             dt = new DataTable();
             sda.Fill(dt);
-            ReportView.ItemsSource = dt.DefaultView;
+            if (ChartGrid2.Children.Count > 1)
+            {
+                ChartGrid2.Children.RemoveAt(1);
+            }
+            ReportViewSales.ItemsSource = dt.DefaultView;
             con.Close();
         }
 
@@ -76,23 +83,29 @@ namespace WpfApp3
                 theRow[5] = value;
                 table1.AcceptChanges();
             }
-            if (chartGrid.Children.Count >= 2)
-                chartGrid.Children.RemoveAt(1);
+            if(ChartGrid2.Children.Count > 1)
+            {
+                ChartGrid2.Children.RemoveAt(1);
+            }
             ReportViewSales.ItemsSource = table1.DefaultView;
             conn.Close();
         }
 
         private void ChartViewSales_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Forms.Integration.WindowsFormsHost host =
-               new System.Windows.Forms.Integration.WindowsFormsHost();
+            host = new System.Windows.Forms.Integration.WindowsFormsHost();
             form1 = new Form1();
             form1.TopLevel = false;
             host.Child = form1;
-            Grid res = this.chartGrid as Grid;
+            Grid res = ChartGrid2 as Grid;
             form1.Width = (int)res.Width;
             form1.Height = (int)res.Height;
             res.Children.Add(host);
+        }
+
+        private void ReportViewSales_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

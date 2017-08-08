@@ -39,10 +39,13 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
@@ -66,13 +69,13 @@
             legend1.Name = "Legend1";
             legend1.Title = "Stock Value Report";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(339, 34);
+            this.chart1.Location = new System.Drawing.Point(400, 34);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "StockValueReport";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(344, 297);
+            this.chart1.Size = new System.Drawing.Size(412, 297);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "Series1";
             title1.BackColor = System.Drawing.Color.Transparent;
@@ -83,7 +86,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(562, 7);
+            this.button1.Location = new System.Drawing.Point(691, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 23);
             this.button1.TabIndex = 1;
@@ -99,13 +102,13 @@
             legend2.Name = "Stock Report";
             legend2.Title = "Stock Report";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(689, 34);
+            this.chart2.Location = new System.Drawing.Point(818, 32);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Stock Report";
             series2.Name = "StockReport";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(375, 297);
+            this.chart2.Size = new System.Drawing.Size(649, 297);
             this.chart2.TabIndex = 2;
             this.chart2.Text = "chart2";
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -115,7 +118,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(943, 3);
+            this.button2.Location = new System.Drawing.Point(1346, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 23);
             this.button2.TabIndex = 3;
@@ -125,7 +128,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(233, 3);
+            this.button3.Location = new System.Drawing.Point(294, 7);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 23);
             this.button3.TabIndex = 5;
@@ -145,9 +148,13 @@
             this.chart3.Name = "chart3";
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
-            series3.Name = "SalesReport";
+            series3.Name = "SalesReportName";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "SalesReportDate";
             this.chart3.Series.Add(series3);
-            this.chart3.Size = new System.Drawing.Size(321, 297);
+            this.chart3.Series.Add(series4);
+            this.chart3.Size = new System.Drawing.Size(382, 297);
             this.chart3.TabIndex = 4;
             this.chart3.Text = "Series1";
             title3.BackColor = System.Drawing.Color.Transparent;
@@ -158,9 +165,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1367, 7);
+            this.button4.Location = new System.Drawing.Point(1353, 332);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 21);
+            this.button4.Size = new System.Drawing.Size(117, 21);
             this.button4.TabIndex = 7;
             this.button4.Text = "Show Profit Loss";
             this.button4.UseVisualStyleBackColor = true;
@@ -174,13 +181,21 @@
             legend4.Name = "Legend1";
             legend4.Title = "Profit Loss";
             this.chart4.Legends.Add(legend4);
-            this.chart4.Location = new System.Drawing.Point(1070, 34);
+            this.chart4.Location = new System.Drawing.Point(12, 357);
             this.chart4.Name = "chart4";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "ProfitLoss";
-            this.chart4.Series.Add(series4);
-            this.chart4.Size = new System.Drawing.Size(400, 297);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "ProfitLossName";
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "ProfitLossDate";
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "ProfitLossDateTime";
+            this.chart4.Series.Add(series5);
+            this.chart4.Series.Add(series6);
+            this.chart4.Series.Add(series7);
+            this.chart4.Size = new System.Drawing.Size(1458, 316);
             this.chart4.TabIndex = 6;
             this.chart4.Text = "Series1";
             title4.BackColor = System.Drawing.Color.Transparent;
@@ -194,7 +209,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1475, 344);
+            this.ClientSize = new System.Drawing.Size(1475, 673);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.chart4);
             this.Controls.Add(this.button3);

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\sujan\SLTGSTApp\WpfApp3\App.xaml
-7591094157
+8188403310
 
-19-1826658980
+201502150057
 191400282094
-items.xaml;MainWindow.xaml;SalesOrderUC.xaml;SalesOrderInvoiceUC.xaml;PurchaseOrderInvoiceUC.xaml;PurchaseOrderUC.xaml;UserControlInventoryReport.xaml;
+items.xaml;MainWindow.xaml;SalesOrderUC.xaml;SalesOrderInvoiceUC.xaml;PurchaseOrderInvoiceUC.xaml;PurchaseOrderUC.xaml;UserControlInventoryReport.xaml;UserControlSOPOS.xaml;
 
-True
+False
 
