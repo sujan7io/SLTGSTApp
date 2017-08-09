@@ -32,7 +32,7 @@ namespace WpfApp3
         {
             form1 = null;
             InitializeComponent();
-            System.Windows.Forms.Integration.WindowsFormsHost host = null;
+            host = null;
         }
         //OpeningStock * OpeningStockRatePerUnit = Sales
         //Name-Code

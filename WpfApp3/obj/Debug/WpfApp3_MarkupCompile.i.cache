@@ -16,5 +16,5 @@ E:\sujan\SLTGSTApp\WpfApp3\App.xaml
 191400282094
 items.xaml;MainWindow.xaml;SalesOrderUC.xaml;SalesOrderInvoiceUC.xaml;PurchaseOrderInvoiceUC.xaml;PurchaseOrderUC.xaml;UserControlInventoryReport.xaml;UserControlSOPOS.xaml;
 
-False
+True
 

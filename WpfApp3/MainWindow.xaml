@@ -20,7 +20,7 @@
             <RowDefinition>
             </RowDefinition>
         </Grid.RowDefinitions>
-        <Menu Grid.Column="0" Grid.Row="0" Height="32" Margin="0,5,0,0" RenderTransformOrigin="0.084,0.171" VerticalAlignment="Top" HorizontalContentAlignment="Right" FlowDirection="RightToLeft" Grid.ColumnSpan="4" FontWeight="Bold" FontSize="14">
+        <Menu Grid.Column="0" Grid.Row="0" Height="32" Margin="0,5,0,0" RenderTransformOrigin="0.084,0.171" VerticalAlignment="Top" HorizontalContentAlignment="Right" FlowDirection="RightToLeft" Grid.ColumnSpan="4" FontWeight="Bold">
             <Menu.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF6F6F6" Offset="0.25"/>
@@ -29,23 +29,37 @@
                     <GradientStop Color="#FFA6CBA2" Offset="1"/>
                 </LinearGradientBrush>
             </Menu.Background>
-            <MenuItem Header="Refer A Friend" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Margin="0" FlowDirection="RightToLeft">
+            <MenuItem Header="Refer A Friend" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Margin="0" FlowDirection="RightToLeft" FontWeight="Normal" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
             </MenuItem>
-            <MenuItem Header="Getting Started" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0" FlowDirection="RightToLeft" Grid.IsSharedSizeScope="True">
+            <MenuItem Header="Getting Started" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0" FlowDirection="RightToLeft" Grid.IsSharedSizeScope="True" FontWeight="Normal" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
             </MenuItem>
-            <MenuItem Header="GST Helpline  1800 123 7711" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0" FlowDirection="RightToLeft">
+            <MenuItem Header="GST Helpline  1800 123 7711" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0" FlowDirection="RightToLeft" FontWeight="Normal" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
             </MenuItem>
         </Menu>
-        <Menu Grid.Column="0" Width="132" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Margin="0,31,0,0" Grid.RowSpan="2">
+        <Menu Grid.Column="0" Width="185" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Margin="9,31,0,0" Grid.RowSpan="2" FontWeight="Bold" >
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel />
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
             <Menu.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF6F6F6" Offset="0.25"/>
@@ -54,25 +68,26 @@
                     <GradientStop Color="#FF55A63D" Offset="1"/>
                 </LinearGradientBrush>
             </Menu.Background>
-            <Menu.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="0.75"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="0.491"/>
-                </TransformGroup>
-            </Menu.RenderTransform>
-            <MenuItem HeaderStringFormat="submenu 1" Header="Dashboard" FontSize="16" FontWeight="Bold" Width="134" Click="MenuItem_Click_12">
+            <MenuItem HeaderStringFormat="submenu 1" Header="Dashboard" FontWeight="Bold" Width="134" Click="MenuItem_Click_12" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
             </MenuItem>
-            <MenuItem Header="Contacts" RenderTransformOrigin="1.489,0.27" FontSize="16" FontWeight="Bold" Width="115">
+            <MenuItem Header="Contacts" RenderTransformOrigin="1.489,0.27" FontWeight="Bold" Width="115" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
             </MenuItem>
-            <MenuItem Header="Items" FontSize="16" FontWeight="Bold" Width="82">
+            <MenuItem Header="Items" FontWeight="Bold" Width="82" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
@@ -92,13 +107,19 @@
                     </MenuItem.DataContext>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Banking" FontSize="16" FontWeight="Bold" Width="111">
+            <MenuItem Header="Banking" FontWeight="Bold" Width="111" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
             </MenuItem>
-            <Separator FontSize="16" FontWeight="Bold" Width="45"/>
-            <MenuItem Header="Sales   " Click="MenuItem_Click_3" FontSize="16" FontWeight="Bold" Width="95">
+            <Separator FontWeight="Normal" Width="45" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FFEC1088"/>
+            <MenuItem Header="Sales   " Click="MenuItem_Click_3" FontWeight="Bold" Width="95" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
@@ -138,7 +159,10 @@
                     </MenuItem.DataContext>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Purchases" FontSize="16" FontWeight="Bold" Width="129">
+            <MenuItem Header="Purchases" FontWeight="Bold" Width="129" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
@@ -184,12 +208,18 @@
                 </MenuItem>
             </MenuItem>
             <Separator FontSize="16" FontWeight="Bold" Width="45"/>
-            <MenuItem Header="Timesheet" FontSize="16" FontWeight="Bold" Width="132">
+            <MenuItem Header="Timesheet" FontWeight="Bold" Width="132" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
             </MenuItem>
-            <MenuItem Header="Accountants" FontSize="16" FontWeight="Bold" Width="134">
+            <MenuItem Header="Accountants" FontWeight="Bold" Width="134" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
@@ -219,7 +249,10 @@
                     </MenuItem.DataContext>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Reports" FontSize="16" FontWeight="Bold" Width="105">
+            <MenuItem Header="Reports" FontWeight="Bold" Width="105" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
                 <MenuItem.DataContext>
                     <Properties:Settings/>
                 </MenuItem.DataContext>
@@ -234,8 +267,25 @@
                     </MenuItem.DataContext>
                 </MenuItem>
             </MenuItem>
-            <MenuItem FontWeight="Bold" FontSize="14" Header="Exit" Click="MenuItem_Click_13"/>
+            <Separator HorizontalContentAlignment="Stretch"/>
+            <MenuItem FontWeight="Bold" Header="Exit" Click="MenuItem_Click_13" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Foreground="#FF050A21" HorizontalAlignment="Left">
+                <MenuItem.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                </MenuItem.Background>
+            </MenuItem>
+            <Separator HorizontalContentAlignment="Stretch"/>
+            <MenuItem Header="Dashboard" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Create" VerticalAlignment="Center" VerticalContentAlignment="Bottom" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Summary" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="List" RenderTransformOrigin="0.147,0.869" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Collection" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Withdrawl" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Plan" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Settings" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Extra" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Income/Expenditure Entry" Width="175" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <MenuItem Header="Reports" HorizontalAlignment="Left" FontWeight="Bold"/>
         </Menu>
-        <Grid Grid.Column="1" x:Name="center" Grid.RowSpan="2" Grid.ColumnSpan="3" Margin="136,27,0,10"/>
+        <Grid Grid.Column="1" x:Name="center" Grid.RowSpan="2" Grid.ColumnSpan="3" Margin="199,27,0,10" Background="#FFE7E8EC"/>
     </Grid>
 </Window>

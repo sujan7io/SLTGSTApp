@@ -294,7 +294,6 @@ namespace WpfApp3
                     tblData2.Rows.Add(dr);
                 }
                 DisplaySearch.ItemsSource = tblData2.DefaultView;
-
             }
         }
 

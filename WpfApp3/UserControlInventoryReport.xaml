@@ -4,8 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp3"
-             mc:Ignorable="d" Width="585" Height="697" Background="#FFA67070">
-    <Grid x:Name="chartGrid" Margin="0,10" Grid.Row="3">
+             mc:Ignorable="d" Width="585" Height="697" Background="White">
+    <Grid x:Name="chartGrid" Margin="0,10" Grid.Row="3" Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="30">
             </RowDefinition>
@@ -17,7 +17,7 @@
         <Button x:Name="showReportSales" Grid.Row="0" Content="Sales Stock Report" HorizontalAlignment="Right" Margin="0,4,204,4" Click="showReportSales_Click" Width="119"/>
         <Button x:Name="ChartViewSales" Content="Chart View" Grid.Row="0" HorizontalAlignment="Right" Margin="0,4,328,4" Width="77" Click="ChartViewSales_Click" />
         <Grid x:Name="ChartGrid2" Grid.Row="1">
-            <DataGrid x:Name="ReportViewSales" Grid.Row="1" Background="#FF84A28B" SelectionChanged="ReportViewSales_SelectionChanged"/>
+            <DataGrid x:Name="ReportViewSales" Grid.Row="1" Background="#FFDBDBDB" SelectionChanged="ReportViewSales_SelectionChanged"/>
         </Grid>
     </Grid>
 </UserControl>

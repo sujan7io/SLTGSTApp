@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp3"
         xmlns:Properties="clr-namespace:WpfApp3.Properties" x:Class="WpfApp3.items"
         mc:Ignorable="d"
-        Height="1016.986" Width="1347.683" UseLayoutRounding="True" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}">
+        Height="1016.986" Width="1347.683" UseLayoutRounding="True" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}">
     <Grid Margin="0,57,0,10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="671*"/>
@@ -93,7 +93,7 @@
             <ComboBoxItem Content="5"/>
         </ComboBox>
         <Button Content="Create Table" HorizontalAlignment="Left" Margin="60,-42,0,970" Width="90" RenderTransformOrigin="0.56,1.091" Grid.Column="4" Height="22" VerticalAlignment="Bottom" Click="Button_Click"/>
-        <DataGrid x:Name="dataGrid1" Height="286" Margin="0,635,0,0" VerticalAlignment="Top" Grid.ColumnSpan="5" FontWeight="Bold" Background="#FFA49797"/>
+        <DataGrid x:Name="dataGrid1" Height="286" Margin="0,635,0,0" VerticalAlignment="Top" Grid.ColumnSpan="5" FontWeight="Bold" Background="#FFE5E5E5"/>
         <Button Content="Add Item" Grid.Column="3" HorizontalAlignment="Left" Margin="503,-42,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Grid.ColumnSpan="2"/>
         <Button Content="Show Records" Grid.Column="3" HorizontalAlignment="Left" Margin="411,-42,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_2"/>
         <Button Content="Update" Grid.Column="3" HorizontalAlignment="Left" Margin="329,-42,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
